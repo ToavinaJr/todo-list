@@ -4,6 +4,7 @@ let main = document.getElementById('main');
 
 btnTodo.addEventListener('click' , addTask);
 
+
 function addTask() {
       let task = document.createElement('div');
       task.classList.add("task");
@@ -33,3 +34,9 @@ function addTask() {
             title.textContent = modif;
       })
 }
+
+document.getElementById("erase").addEventListener('click', () => {
+      for (item of main.querySelectorAll(".task"))  {
+            main.removeChild(item);
+      }
+})
