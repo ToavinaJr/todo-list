@@ -1,0 +1,105 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      list-style: none;
+      border:  solid 1px red;
+}
+
+body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: #161925;
+}
+
+#container {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px;
+      background: #fcfcfc;
+}
+
+
+header input , header button {
+      height: 40px;
+      padding: 10px;
+      border: none;
+}
+
+header {
+      width: 100%;
+      position: relative;
+}
+
+header input {
+      width: 60%;
+      background: #fcf3f3;
+}
+
+header button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 30%;
+      background: rgb(62, 62, 252);
+      border:none;
+      color: #fff;
+      cursor: pointer;
+}
+
+header button:hover {
+      background: rgb(27, 27, 148);
+}
+
+main {
+      width: 100%;
+      padding: 10px;
+}
+
+.task {
+      min-height: 60px;
+      padding: 10px;
+      margin: 10px;
+      position: relative;
+}
+
+.edit, .delete {
+      display: inline;
+      position: absolute;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+      top: 20%;
+      width: 70px;
+      text-align: center;
+}
+
+.title {
+      height: 70px;
+}
+
+.edit {
+      background: green;
+      right: 150px;
+}
+
+.edit:hover {
+      background: rgb(5, 243, 5);
+}
+.delete {
+      background: #f59607;
+      right: 0;
+      right: 20px;
+}
+
+.delete:hover {
+      background: #f81c03;
+}
