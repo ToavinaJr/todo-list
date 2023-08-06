@@ -30,7 +30,10 @@ function addTask() {
       })
 
       edit.addEventListener('click', () => {
-            const modif = prompt('EDit your task ');
+            let modif = prompt('EDit your task ');
+            while (modif==="") {
+                  modif = prompt('EDit your task ');
+            }
             title.textContent = modif;
       })
 }
@@ -39,4 +42,4 @@ document.getElementById("erase").addEventListener('click', () => {
       for (item of main.querySelectorAll(".task"))  {
             main.removeChild(item);
       }
-})
+}) 
