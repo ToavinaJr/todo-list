@@ -33,11 +33,11 @@ function addTask() {
             edit.addEventListener('click', () => {
                   let modif = prompt('Edit your task name');
       
-                  while (modif === "") {
+                  while (modif === "" || modif.trim() === "") {
                         modif = prompt('Edit your task name ');
                   }
       
-                  title.textContent = modif;
+                  title.textContent = modif.trim();
             })
       }
       else {
