@@ -13,6 +13,7 @@ body{
       justify-content: center;
       padding: 20px;
       background: #161925;
+      width: 100vw;
 }
 
 #container {
@@ -22,7 +23,6 @@ body{
       justify-content: center;
       align-items: center;
       padding: 10px;
-      border-radius: 10px;
       background: #fcfcfc;
 }
 
@@ -43,7 +43,7 @@ header {
 
 header input {
       width: 64%;
-      background: #fcf3f3;
+      background: #cec2c2;
 }
 
 header button {
@@ -59,8 +59,7 @@ header button:hover {
 }
 
 main {
-      width: 95%;
-      padding: 10px;
+      width: 92%;
 }
 
 .task {
@@ -69,10 +68,9 @@ main {
       align-items: center;
       min-height: 60px;
       padding: 10px;
-      /* margin: 10px; */
-      position: relative;
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
       width: 100%;
+      margin-bottom: 10px;
 }
 
 .edit, .delete{
@@ -89,6 +87,7 @@ main {
       height: 70px;
       width: 60%;
       margin: 10px;
+      overflow-x: auto;
 }
 
 .edit {
@@ -117,5 +116,78 @@ main {
       cursor: pointer;
       background: #f81c03;
       font-size: 24px;
+      margin: 10px 0;
       color: #fff;
+}
+
+@media only screen and (max-width: 300px) {
+      * {
+            font-size: 10px;
+      }
+
+      #container {
+            width: 100%;
+            margin: 0;
+      }
+
+      .delete, .edit {
+            margin: 3px;
+            padding: 3px;
+            border-radius: 2px;
+      }
+      #erase {
+            font-size: 12px;
+      }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+      * {
+            font-size: 12px;
+      }
+
+      #container {
+            width: 100%;
+            margin: 0;
+      }
+
+      .task {
+            min-height: 20px;
+            padding: 2px 5px;
+      }
+      .delete, .edit {
+            margin: 2px 5px;
+            padding: 5px;
+            border-radius: 4px;
+      }
+
+      #erase {
+            font-size: 14px;
+      }
+}
+
+@media only screen and (max-width: 900px) {
+      * {
+            font-size: 16px;
+      }
+
+      #container {
+            width: 90%;
+            margin: 0;
+      }
+
+      .task {
+            min-height: 40px;
+            padding: 4px 8px;
+      }
+      .delete, .edit {
+            margin: 4px 8px;
+            padding: 5px;
+            border-radius: 4px;
+      }
+
+      #erase {
+            font-size: 20px;
+      }     
 }
